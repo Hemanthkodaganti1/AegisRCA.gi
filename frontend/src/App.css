@@ -1,0 +1,108 @@
+.app {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  color: #38bdf8;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #94a3b8;
+  font-size: 17px;
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.incident-card,
+.investigation-card,
+.result-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.incident-card h2,
+.investigation-card h2,
+.result-card h2 {
+  margin-top: 0;
+  color: #f8fafc;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  resize: vertical;
+  margin: 10px 0 16px;
+}
+
+textarea:focus {
+  outline: 2px solid #38bdf8;
+  border-color: #38bdf8;
+}
+
+button {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0369a1;
+}
+
+.agents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.agents div {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+.result-card p {
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .agents {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+}

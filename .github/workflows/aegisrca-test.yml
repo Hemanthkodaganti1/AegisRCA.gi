@@ -1,0 +1,13 @@
+name: AegisRCA Test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test AegisRCA integration
+        run: echo "AegisRCA GitHub Actions integration is working"
